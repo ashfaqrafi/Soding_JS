@@ -12,5 +12,6 @@ function f(limit){
     }
     return sum;
 }
-
+alert('The sum of the even-valued terms in the Fibonacci sequence :' + f(MAX));
 document.write('The sum of the even-valued terms in the Fibonacci sequence : ',f(MAX));
+console.log('The sum of the even-valued terms in the Fibonacci sequence : ',f(MAX));
