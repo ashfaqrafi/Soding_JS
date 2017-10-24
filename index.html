@@ -16,6 +16,27 @@
 
     </head>
     <body>
+
+    <script>
+        const MAX = 4000000;
+
+        function f(limit){
+            var sum=2;
+            var a=1,b=2;
+            var fib=0;
+            while(fib<=limit){
+                fib = a+b;
+                a=b;
+                b=fib;
+                if(fib%2===0) sum+=fib;
+            }
+            return sum;
+        }
+        alert('The sum of the even-valued terms in the Fibonacci sequence :' + f(MAX));
+        document.write('The sum of the even-valued terms in the Fibonacci sequence : ',f(MAX));
+        console.log('The sum of the even-valued terms in the Fibonacci sequence : ',f(MAX));
+
+    </script>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
